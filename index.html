@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="es">
 <head>
   <meta charset="utf-8">
@@ -7,18 +8,126 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Diagnóstico técnico-económico de integración IA</h1>
-    <p>Completa esta aplicación con tus propios campos, cálculos y decisiones.</p>
-  </header>
-  <main>
-    <section id="caso"><h2>1. Caso</h2><p><!-- TODO: resume el caso con tus palabras. --></p></section>
-    <section id="datos"><h2>2. Datos de entrada</h2><!-- TODO: añade los campos del formulario. --></section>
-    <section id="resultados"><h2>3. Resultados calculados</h2><!-- TODO: muestra consultas, tokens y ahorro humano bruto. --></section>
-    <section id="matriz"><h2>4. Matriz comparativa</h2><!-- TODO: crea la tabla API externa vs cloud gestionado. --></section>
-    <section id="raid"><h2>5. Mini-RAID</h2><!-- TODO: crea campos para riesgo, supuesto, incidencia y dependencia. --></section>
-    <section id="decision"><h2>6. Decisión final</h2><!-- TODO: añade un espacio para redactar la recomendación. --></section>
-  </main>
-  <script src="script.js"></script>
+
+<header>
+  <h1>Diagnóstico técnico-económico de integración IA</h1>
+  <p>Completa esta aplicación con tus propios campos, cálculos y decisiones.</p>
+</header>
+
+<main>
+
+  <!-- 1. CASO -->
+
+  <section id="caso">
+    <h2>1. Caso</h2>
+    <p>
+      Empresa con 12.000 tickets mensuales. Se analiza la integración de IA para reducir tiempos de atención y mejorar eficiencia.
+    </p>
+  </section>
+
+  <!-- 2. DATOS -->
+
+  <section id="datos">
+    <h2>2. Datos de entrada</h2>
+
+```
+<label>Tickets mensuales</label>
+<input id="tickets" type="number">
+
+<label>Consultas por ticket</label>
+<input id="consultas" type="number">
+
+<label>Tokens entrada</label>
+<input id="tokensEntrada" type="number">
+
+<label>Tokens salida</label>
+<input id="tokensSalida" type="number">
+
+<label>Minutos actuales</label>
+<input id="tiempoActual" type="number">
+
+<label>Minutos con IA</label>
+<input id="tiempoIA" type="number">
+
+<label>Coste por hora (€)</label>
+<input id="costeHora" type="number">
+
+<br><br>
+<button onclick="calcular()">Calcular</button>
+```
+
+  </section>
+
+  <!-- 3. RESULTADOS -->
+
+  <section id="resultados">
+    <h2>3. Resultados calculados</h2>
+    <pre id="output"></pre>
+  </section>
+
+  <!-- 4. MATRIZ -->
+
+  <section id="matriz">
+    <h2>4. Matriz comparativa</h2>
+
+```
+<table border="1">
+  <tr>
+    <th></th>
+    <th>API externa</th>
+    <th>Cloud gestionado</th>
+  </tr>
+  <tr>
+    <td>Coste inicial</td>
+    <td>Bajo</td>
+    <td>Medio</td>
+  </tr>
+  <tr>
+    <td>Control</td>
+    <td>Bajo</td>
+    <td>Alto</td>
+  </tr>
+  <tr>
+    <td>Escalabilidad</td>
+    <td>Alta</td>
+    <td>Alta</td>
+  </tr>
+</table>
+```
+
+  </section>
+
+  <!-- 5. RAID -->
+
+  <section id="raid">
+    <h2>5. Mini-RAID</h2>
+
+```
+<label>Riesgos</label>
+<textarea></textarea>
+
+<label>Supuestos</label>
+<textarea></textarea>
+
+<label>Incidencias</label>
+<textarea></textarea>
+
+<label>Dependencias</label>
+<textarea></textarea>
+```
+
+  </section>
+
+  <!-- 6. DECISIÓN -->
+
+  <section id="decision">
+    <h2>6. Decisión final</h2>
+    <textarea placeholder="Escribe tu recomendación final"></textarea>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
 </body>
 </html>
